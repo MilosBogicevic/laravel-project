@@ -13,3 +13,7 @@ Route::get('/what-we-do', function () {
 Route::get('/who-we-are', function () {
     return view('who-we-are');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
