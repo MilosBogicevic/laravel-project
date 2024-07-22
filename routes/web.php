@@ -19,8 +19,7 @@ Route::get('contact', function () {
 });
 
 Route::get('posts', function () {
-    $names = ["Marko", "Milan"];
-    return view('posts', ["names" => $names]);
+    return view('posts');
 });
 
 Route::get('post', function () {
