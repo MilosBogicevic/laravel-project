@@ -22,7 +22,7 @@ class PostsController extends Controller
         if (key_exists($id, $this->posts)) {
             $post = $this->posts[$id];
 
-            return view("post", ["post" => $post]);
+            return view("post", ["post" => $post, "title" => $post]);
         } else {
             abort(404, "Post not found");
         }

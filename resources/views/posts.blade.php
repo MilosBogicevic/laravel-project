@@ -1,9 +1,9 @@
 @extends('main')
 
-@section('title', 'Posts')
+@section('title', 'Blog')
 
 @section('main-content')
-    <h1>Posts</h1>
+    <h1>Blog</h1>
     <ul>
         @foreach ($posts as $key=>$value)
             <li><a href="/post/{{ $key }}">{{ $value }}</a></li>
