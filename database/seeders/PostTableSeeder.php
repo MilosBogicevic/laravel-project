@@ -13,5 +13,16 @@ class PostTableSeeder extends Seeder
      */
     public function run(): void
     {
+        $post1 = new Post();
+        $post1->title = "First post";
+        $post1->content = "First random text";
+        $post1->author = "Milos";
+        $post1->save();
+
+        $post2 = new Post();
+        $post2->title = "Second post";
+        $post2->content = "Second random text";
+        $post2->author = "Milos";
+        $post2->save();
     }
 }
