@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\PostsController;
+use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('what-we-do', function () {
@@ -19,6 +19,4 @@ Route::get('contact', function () {
     return view('contact');
 });
 
-Route::get('posts', [PostsController::class, 'index']);
-
-Route::get('post/{id}', [PostsController::class, 'show']);
+Route::get('posts', [PostController::class, 'index']);
