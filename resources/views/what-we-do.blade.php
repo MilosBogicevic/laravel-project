@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What we do page</title>
-</head>
-<body>
-    <h1>What we do page</h1>
-</body>
-</html>
+@section('title', 'What we do')
+
+@extends('layout')
+
+@section('main')
+    <h1>What we do</h1>
+@endsection

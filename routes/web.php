@@ -15,8 +15,12 @@ Route::get('who-we-are', function () {
     return view('who-we-are');
 });
 
+Route::get('blog', function () {
+    return view('blog');
+});
+
 Route::get('contact', function () {
     return view('contact');
 });
 
-Route::get('posts', [PostController::class, 'index']);
+Route::get('blog', [PostController::class, 'index']);

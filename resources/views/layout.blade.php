@@ -8,6 +8,7 @@
     <title>@yield('title')</title>
 </head>
 <body>
+    @include('navbar')
     @yield('main')
 </body>
 </html>
