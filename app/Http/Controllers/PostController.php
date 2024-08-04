@@ -14,6 +14,12 @@ class PostController extends Controller
         return view("blog", ["allPosts" => $allPosts]);
     }
 
+    public function show($id)
+    {
+        $post = Post::find($id);
+        return view("post", ['post' => $post]);
+    }
+
     public static function convert($data)
     {
         return Carbon::parse($data)->format('d/m/Y');

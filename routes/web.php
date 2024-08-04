@@ -24,3 +24,4 @@ Route::get('contact', function () {
 });
 
 Route::get('blog', [PostController::class, 'index']);
+Route::get('blog/{id}', [PostController::class, 'show']);
