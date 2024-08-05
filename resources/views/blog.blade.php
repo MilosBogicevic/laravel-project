@@ -7,11 +7,11 @@
 @extends('layout')
 
 @section('main')
-    <h1>Blog</h1>
-    <div class="flex justify-center gap-x-8">
+    <h1 class="text-3xl p-8 text-center">Blog</h1>
+    <div class="flex justify-center gap-8 flex-wrap px-4">
         @foreach ($allPosts as $post)
-            <a href="/blog/{{ $post->id }}" class="bg-gray-100 p-4 w-1/3">
-                <div class="flex flex-col ">
+            <a href="/blog/{{ $post->id }}" class="bg-gray-100 p-4 max-w-[300px] w-full">
+                <div class="flex flex-col">
                     <h2>{{ $post->title }}</h2>
                     <p>{{ $post->content }}</p>
                     <span>{{ $post->author }}</span>

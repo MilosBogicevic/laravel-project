@@ -24,5 +24,17 @@ class PostTableSeeder extends Seeder
         $post2->content = "Second random text";
         $post2->author = "Milos";
         $post2->save();
+
+        $post2 = new Post();
+        $post2->title = "Third post";
+        $post2->content = "Third random text";
+        $post2->author = "Milos";
+        $post2->save();
+
+        $post2 = new Post();
+        $post2->title = "Fourth post";
+        $post2->content = "Fourth random text";
+        $post2->author = "Milos";
+        $post2->save();
     }
 }

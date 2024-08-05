@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>@yield('title')</title>
 </head>
-<body>
+<body class="max-w-[1200px] mx-auto">
     @include('navbar')
     @yield('main')
 </body>
